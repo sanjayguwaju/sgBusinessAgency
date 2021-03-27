@@ -116,6 +116,9 @@ html {
   margin: 0 auto 4rem auto;
   padding: 1rem 0;
   box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeAnimation 1s 1.5s forwards;
 }
 
 .banner-btn {
@@ -130,5 +133,16 @@ html {
   box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.5);
   text-shadow: 0.6rem 0.3rem 0.2rem rgba(0, 0, 0, 0.5);
   cursor: pointer;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 /* End of Section 1 */
