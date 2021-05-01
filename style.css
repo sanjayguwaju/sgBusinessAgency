@@ -17,7 +17,7 @@ html {
 
 .navbar {
   width: 100%;
-  height: 8rem;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
@@ -46,7 +46,26 @@ html {
 }
 
 .nav-list {
-  display: none;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: "MADE Soulmaze", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  margin: 2rem 0;
+  transition: color 0.4s;
+}
+
+.nav-link:hover {
+  color: #9e0e09;
 }
 /* End of Navbar */
 
