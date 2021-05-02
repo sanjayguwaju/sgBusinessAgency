@@ -105,11 +105,15 @@ html {
 
 .line-1 {
   width: 50%;
+  transform: translate(100%, 1rem) rotate(-35deg);
+  transform-origin: right;
 }
 
 .line-3 {
   width: 50%;
   margin-left: auto;
+  transform: translateY(-1rem) rotate(35deg);
+  transform-origin: right;
 }
 
 /* End of Menu */
